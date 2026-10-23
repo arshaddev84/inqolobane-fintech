@@ -15,6 +15,14 @@ The workbench is intended to help an authorised operations user:
 
 The application is decision support, not an autonomous adjudicator. No agent, language model, vector search, transaction update, or case mutation is currently active.
 
+### Web Dashboard Screenshots
+![Inqolobane Web Case Queue](inqolobane_screenshot_01.png)
+![Inqolobane Web Profile Review](inqolobane_screenshot_02.png)
+
+### Windows Dashboard Screenshots
+![Inqolobane Windows Case Queue](inqolobane_windows_screenshot_01.png)
+![Inqolobane Windows Profile Filter](inqolobane_windows_screenshot_03.png)
+
 ## Current implementation
 
 | Area | Available now |
