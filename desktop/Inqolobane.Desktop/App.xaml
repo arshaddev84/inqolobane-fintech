@@ -1,0 +1,44 @@
+<Application
+    x:Class="Inqolobane.Desktop.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <SolidColorBrush x:Key="ListViewItemBackground" Color="#191F1B" />
+                    <SolidColorBrush x:Key="ListViewItemBackgroundPointerOver" Color="#222A24" />
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelected" Color="#283323" />
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPointerOver" Color="#303A2D" />
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPressed" Color="#384532" />
+                    <SolidColorBrush x:Key="ListViewItemForegroundSelected" Color="#ECF2EC" />
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="ListViewItemBackground" Color="#191F1B" />
+                    <SolidColorBrush x:Key="ListViewItemBackgroundPointerOver" Color="#222A24" />
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelected" Color="#283323" />
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPointerOver" Color="#303A2D" />
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPressed" Color="#384532" />
+                    <SolidColorBrush x:Key="ListViewItemForegroundSelected" Color="#ECF2EC" />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+            <SolidColorBrush x:Key="AppBackgroundBrush" Color="#101512" />
+            <SolidColorBrush x:Key="PanelBrush" Color="#191F1B" />
+            <SolidColorBrush x:Key="PanelRaisedBrush" Color="#202822" />
+            <SolidColorBrush x:Key="DividerBrush" Color="#303B33" />
+            <SolidColorBrush x:Key="PrimaryTextBrush" Color="#ECF2EC" />
+            <SolidColorBrush x:Key="SecondaryTextBrush" Color="#9AA69C" />
+            <SolidColorBrush x:Key="AccentBrush" Color="#C4EF79" />
+            <Style x:Key="FieldLabelStyle" TargetType="TextBlock">
+                <Setter Property="Foreground" Value="#819086" />
+                <Setter Property="FontSize" Value="10" />
+                <Setter Property="FontWeight" Value="SemiBold" />
+            </Style>
+            <Style x:Key="FieldValueStyle" TargetType="TextBlock">
+                <Setter Property="Foreground" Value="#DCE4DC" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextWrapping" Value="Wrap" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

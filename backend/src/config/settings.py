@@ -1,0 +1,29 @@
+"""Environment-backed application settings."""
+
+import os
+from functools import lru_cache
+from pathlib import Path
+
+from dotenv import load_dotenv
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+ENV_FILE = Path(__file__).resolve().parents[2] / ".env"
+load_dotenv(ENV_FILE)
+
+
+class Settings(BaseSettings):
+    """Runtime configuration for the local API."""
+
+    database_url: str = os.getenv(
+        "DATABASE_URL",
+        "postgresql+psycopg://postgres:postgres@localhost:5432/inqolobane",
+    )
+    cors_origins: list[str] = ["http://localhost:3000"]
+
+    model_config = SettingsConfigDict(env_file=ENV_FILE, extra="ignore")
+
+
+@lru_cache
+def get_settings() -> Settings:
+    """Return a cached settings instance."""
+    return Settings()
